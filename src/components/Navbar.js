@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { FaTimes, FaBars } from 'react-icons/fa';
-import {FiCode} from 'react-icons/fi';
+import { FiCode } from 'react-icons/fi';
 const Navbar = ({ title, iconStyles, navLinkStyles }) => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
