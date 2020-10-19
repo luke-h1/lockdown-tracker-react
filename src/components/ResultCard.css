@@ -1,8 +1,10 @@
-.list { 
+.list {
   text-align: left;
   list-style-type: none;
+  color: #fff;
 }
 
-.collection-item { 
-  margin: 0 10px 20px ;
+.collection-item {
+  margin: 0 10px 20px;
+  color: #fff;
 }

@@ -1,17 +1,28 @@
-import React, { Fragment, useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { Fragment, useState, useEffect } from 'react';
 import './Form.css';
+import ResultCard from './ResultCard';
+const Form = () => {
+  const [text, setText] = useState('');
+  const [value, setValue] = useState({});
 
-const Form = ({ title }) => {
-  const [value, setValue] = useState('');
+  const onChange = (e) => {
+    setText(e.target.value);
+  };
 
-  const onChange = (e) => setValue(e.target.value);
-
-  const handleClick = async (text) => {
+  const getData = async (text) => {
     const API_URL = `https://cors-anywhere.herokuapp.com/https://www.lockdownapi.com/${text}`;
     const res = await fetch(API_URL);
     const data = await res.json();
-    console.log(data);
+    setText('');
+  };
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (text === '') {
+      return;
+    } else {
+      getData(text);
+    }
   };
 
   return (
@@ -19,7 +30,7 @@ const Form = ({ title }) => {
       <div className="form-container">
         <input
           type="text"
-          placeholder="postcode"
+          placeholder="postcode..."
           className="form__input"
           onChange={onChange}
         />
@@ -30,6 +41,7 @@ const Form = ({ title }) => {
           onClick={handleClick}
         />
       </div>
+      <ResultCard />
     </Fragment>
   );
 };
