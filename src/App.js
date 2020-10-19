@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
-import FourOhFour from './components/FourOhFour';
+import FourOhFour from './components/FourOhFour'
 function App() {
   return (
     <Fragment>
@@ -13,7 +13,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
-          <Route default component={fourOhFour} />
+          <Route default component={FourOhFour} />
         </Switch>
       </BrowserRouter>
     </Fragment>
