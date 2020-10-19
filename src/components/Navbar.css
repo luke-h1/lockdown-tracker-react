@@ -1,4 +1,4 @@
-/* NAVBAR STYLES START*/ 
+/* NAVBAR STYLES START*/
 .navbar {
   background: #1c2237;
   height: 100px;
@@ -9,6 +9,8 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  min-width: 100vw;
+  margin-bottom: 2em;
 }
 
 .navbar-container {
@@ -33,6 +35,7 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  margin-top: 1em;
   display: flex;
   align-items: center;
 }
@@ -111,7 +114,7 @@
   .nav-links:hover {
     color: #f00946;
     transform: scale(1.2);
-    transition: all 1.0s ease;
+    transition: all 1s ease;
   }
 
   .nav-item:hover {
@@ -119,8 +122,8 @@
   }
 
   .nav-item {
-    width: 100%; 
-    font-weight: 700; 
+    width: 100%;
+    font-weight: 700;
     font-size: 35px;
   }
 
@@ -155,8 +158,7 @@
   }
 }
 
-.lead { 
+.lead {
   font-size: 20px;
 }
 /* NAVBAR STYLES END  */
-

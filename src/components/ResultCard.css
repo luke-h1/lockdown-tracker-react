@@ -1,0 +1,8 @@
+.list { 
+  text-align: left;
+  list-style-type: none;
+}
+
+.collection-item { 
+  margin: 0 10px 20px ;
+}

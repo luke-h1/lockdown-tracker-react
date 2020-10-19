@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { FaReact } from 'react-icons/fa';
+import Form from './Form';
 import './Home.css';
 const Home = ({ title, iconStyle }) => {
   return (
@@ -14,6 +15,7 @@ const Home = ({ title, iconStyle }) => {
           <li className="collection-item">What shops are open</li>
         </ul>
       </div>
+      <Form />
       {/* put results from props form here */}
     </div>
   );

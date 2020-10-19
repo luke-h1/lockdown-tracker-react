@@ -26,7 +26,7 @@ const Footer = ({ title, copyright }) => {
             >
               <FaGithub test-id="github" />
             </a>
-            <p className='copyright'>{copyright}</p>
+            <p className="copyright">{copyright}</p>
           </div>
         </div>
       </section>
