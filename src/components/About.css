@@ -1,0 +1,36 @@
+.about-container {
+  min-height: 60vh;
+  max-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c2237;
+  padding: 1rem;
+  min-width: 100vw;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+p {
+  line-height: 1.6;
+  padding: 1rem;
+  font-size: 22px;
+}
+
+.description-container {
+  max-width: 500px;
+  min-width: 500px;
+}
+
+a { 
+  color: hotpink; 
+  text-decoration: none;
+}
+
+a:hover { 
+  text-decoration: underline;
+}

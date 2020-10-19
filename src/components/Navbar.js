@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { FiCode } from 'react-icons/fi';
+import './Navbar.css'
 const Navbar = ({ title, iconStyles, navLinkStyles }) => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -36,7 +37,7 @@ const Navbar = ({ title, iconStyles, navLinkStyles }) => {
           </li>
           <li className="nav-item">
             <Link
-              to="projects"
+              to="about"
               className={navLinkStyles}
               onClick={closeMobileMenu}
               onBlur={closeMobileMenu}

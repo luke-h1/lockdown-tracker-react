@@ -4,13 +4,28 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #1c2237;
+  padding: 1rem;
+  min-width: 100vw;
+  min-height: 35vh;
 }
 
 .title { 
+  z-index: 1111;
   text-align: center;
+  color: #fff;
 }
 
 .icon { 
   font-size: 22px;
   fill: #000;
+}
+
+.list { 
+  text-align: left;
+  list-style-type: none;
+}
+
+.collection-item { 
+  margin: 0 10px 20px ;
 }
